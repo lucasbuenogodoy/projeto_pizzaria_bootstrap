@@ -13,6 +13,58 @@
 </head>
 
 <body>
+    <!--MENU-->
+    <!-- nav bar - barra de navegação do bootstrap
+     navbar-expand-lg - controla a responsividade. A partir de telas lg (large),
+     o menu fica aberto/horizontal. Abaixo disso, pode ficar recolhido no
+     botão sanduíche.
+     bg-danger - define a coro de fundo vermelho
+     navbar-dark - adapta os textos e ícones do navbar para serem utilizados
+     sobre o fundo escuro
+     shadow - adiciona uma sombra ao elemento-->
+    <nav class="navbar navbar-expand-lg bg-danger navbar-dark shadow">
+        <div class="container">
+            <!-- navbar-brand - estiliza o elemento como a marca/logo da navbar
+             fw-bold - deixa o texto em negrito (fw - font weight)
+             fs-4 - define o tamanho da fonte (fs - font size) vai até o 6-->
+            <a class="navbar-brand fw-bold fs-4" href="#">Bella Pizza</a>
+
+            <!--navbar-toggler - botão responsável por abrir e fechar o menu
+            em telas maiores.
+            
+            data-bs-toggle="collapse" - informa que o botão irá mostrar/esconder um elemento.
+            
+            data-bs-target - indica qual elemento será aberto ou fechado.
+            Nesse caso, procura o elemento que possui id="menu"-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <!-- navbar-toggler-icon - exibe o botão sanduíche -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <!--navbar-nav - organiza a lista como menu de navegação
+                ms-auto - adiciona margem automáticamente do lado inicial (start)
+                Ou seja, empurra o item para a direita. (ms - margin-start)-->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pizzas">Pizzas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 </body>
 
