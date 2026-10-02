@@ -88,19 +88,19 @@
                 <div class="col-md-6">
                     <!-- display-4 - aplica um tamanho grande de destaque ao texto
                      fw-bold - deixa o texto em negrito -->
-                     <h1 class="display-4 fw-bold">A Melhor pizza da cidade</h1>
+                    <h1 class="display-4 fw-bold">A Melhor pizza da cidade</h1>
 
-                     <!-- lead - deixa o parágrafo maior e com aparência de texto
+                    <!-- lead - deixa o parágrafo maior e com aparência de texto
                       de destaque / apresentação. -->
-                     <p class="lead">Pizzas artesanais preparadas com ingredientes selecionados pelo 
+                    <p class="lead">Pizzas artesanais preparadas com ingredientes selecionados pelo
                         próprio Ratatouille e muito sabor.
-                     </p> 
+                    </p>
 
-                     <!-- btn - aplica a estilização padrão de botão do Bootstrap 
+                    <!-- btn - aplica a estilização padrão de botão do Bootstrap 
                       btn-danger - deixa o botão vermelho.
                       btn-lg - cria um botão de tamanho grande.
                       lg - large-->
-                      <a href="#pizzas" class="btn btn-danger btn-lg">Ver Cardápio</a>
+                    <a href="#pizzas" class="btn btn-danger btn-lg">Ver Cardápio</a>
                 </div>
                 <!-- col-md-6 - ocupa as outras 6 colunas do Grid
                  text-center - centraliza o conteúdo / texto
@@ -111,17 +111,95 @@
                  Isso é útil porque no celular a imagem ficará abaixo do texto
                  e precisará de um espaço entre eles. -->
 
-                 <div class="col-md-6 text-center mt-4 mt-md-0">
+                <div class="col-md-6 text-center mt-4 mt-md-0">
                     <!-- img-fluid - torna a imagem responsiva.
                     A imagem diminui de acordo com o tamanho disponível.
                     rounded - deixa os cantos da imagem arredondados.
                     shadow - adiciona uma sombra à imagem. -->
                     <img src="./imagens/pizza.jpg" class="img-fluid rounded shadow" alt="Pizza" />
-                 </div>
+                </div>
             </div>
         </div>
-        </section>
+    </section>
 
+    <!-- PIZZAS
+         id="pizzas" - permite acessar está seção utilizando href="#pizzas".
+         py-5 - adiciona padding em cima e em baixo -->
+    <section id="pizzas" class="py-5">
+        <div class="container">
+            <!-- text-center - centraliza o texto.
+                 fw-bold - deixa o texto em negrito.
+                 mb-4 - adiciona margem inferior.
+                 m = margin 
+                 b = bottom
+                 4 = tamanho do espaçamento-->
+            <h2 class="text-center fw-bold mb-4">Nossas Pizzas</h2>
+
+            <!-- row - cria uma linha do Grid.
+                 g-4 - define um espaçamento entre as colunas e linhas.
+                 g significa gap/gutter. -->
+            <div class="row g-4">
+                <!-- Pizza 1-->
+                <!-- col-md-4 - ocupa 4 das 12 colunas do Grid.
+                     Como temos três elementos:
+                     4 + 4 + 4 = 12 
+                     Portanto, sem telas md ou maiores termos
+                     três cards lado a lado.
+                     Em telas menores, eles ficarão um abaixo do outro. -->
+                <div class="col-md-4">
+                    <!-- card - cria um card do Bootstrap.
+                        h-100 - faz o card ocupar 100% da altura disponível. 
+                        Ajuda a deixar todos os cards com a mesma altura.
+                        
+                        show-sw - adiciona uma sombra pequena sm significa small. -->
+                    <div class="card h-100 shadow-sm">
+                        <!--card-img-top-->
+                        <img src="./imagens/pizza1.webp" class="card-img-top" alt="Pizza" />
+                        
+                        <!-- card-body - cria a área principal do conteúdo do card,
+                        aplicando espaçamentos autmaticamente. -->
+                        <div class="card-body">
+                            <!-- card-title - estiliza o título do card-->
+                            <h5 class="card-title">Calabresa</h5>
+                            <!-- card-text - estiliza o texto do card -->
+                            <p class="card-text">Molho de tomate, mussarela, calabresa, cebola e orégano. </p>
+
+                            <p class="fw-bold text-danger">R$45,00</p>
+
+                            <!-- btn- transforma o link visualmente em botão
+                             btn-danger - aplica a cor vermelha ao botão -->
+                            <a href="#" class="btn btn-danger">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 2-->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./imagens/pizza1.webp" class="card-img-top" alt="Pizza" />
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita</h5>
+                            <p class="card-text">Molho de tomate, mussarela, manjericão e azeite de oliva. </p>
+                            <p class="fw-bold text-danger">R$50,00</p>
+                            <a href="#" class="btn btn-danger">Pedir Agora</a>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Pizza 3 -->
+            <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./imagens/pizza1.webp" class="card-img-top" alt="Pizza" />
+                        <div class="card-body">
+                            <h5 class="card-title">4 Queijos</h5>
+                            <p class="card-text">Molho de tomate, mussarela, provolone, parmesão e gorgonzola. </p>
+                            <p class="fw-bold text-danger">R$55,00</p>
+                            <a href="#" class="btn btn-danger">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
 </body>
 
 </html>
